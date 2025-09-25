@@ -143,7 +143,7 @@ function showCountdown() {
   const container = document.getElementById('countdown');
   let startParam = getURLParam('start');
   let eventParam = getURLParam('event');
-  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2024-08-03T00:00:00'); 
+  let startDate = startParam ? new Date(startParam + 'T00:00:00') : new Date('2025-09-08T00:00:00'); 
   let eventDate = eventParam ? new Date(eventParam + 'T00:00:00') : new Date('2025-08-03T00:00:00');
 
   function update() {
@@ -157,7 +157,7 @@ function showCountdown() {
     let eventSeconds = Math.max(0, Math.floor((eventDiff / 1000) % 60));
 
     container.innerHTML =
-      `Llevamos juntos: <b>${days}</b> días<br>` +
+      `<b>${days}</b> días desde nuestro primer beso<br>` +
       `Nuestro aniversario: <b>${eventDays}d ${eventHours}h ${eventMinutes}m ${eventSeconds}s</b>`;
     container.classList.add('visible');
   }
